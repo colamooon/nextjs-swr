@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es2021: true,
   },
   extends: [
@@ -24,11 +25,9 @@ module.exports = {
   settings: {
     react: {
       createClass: 'createReactClass',
-
       pragma: 'React',
-      fragment: 'React.Fragment',
+      // fragment: 'React.Fragment',
       version: 'detect',
-
       flowVersion: '0.53',
     },
     propWrapperFunctions: [
@@ -38,7 +37,5 @@ module.exports = {
     ],
     linkComponents: ['Hyperlink', { name: 'Link', linkAttribute: 'to' }],
   },
-  rules: {
-    'prettier/prettier': ['error', { singleQuote: true, parser: 'flow' }],
-  },
+  rules: {},
 };

@@ -3,7 +3,6 @@ import AuthAPI from 'lib/api/auth';
 import { SERVER_BASE_URL } from 'lib/utils/constant';
 import useSWR, { ConfigInterface, responseInterface } from 'swr';
 
-
 export type GetRequest = AxiosRequestConfig | null;
 
 interface Return<Data, Error>
